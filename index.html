@@ -1,0 +1,650 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#5B1A18">
+
+<title>Prince Rudraksha Kendra | AI Review</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    background:#f6efe4;
+    color:#351812;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+.container{
+    width:100%;
+    max-width:480px;
+    margin:auto;
+    min-height:100vh;
+    padding-bottom:30px;
+}
+
+.header{
+    background:linear-gradient(145deg,#4d1514,#7b251d);
+    color:white;
+    text-align:center;
+    padding:34px 20px 30px;
+    border-radius:0 0 28px 28px;
+}
+
+.logo{
+    width:76px;
+    height:76px;
+    margin:auto;
+    border-radius:50%;
+    background:#f4d28b;
+    color:#5b1a18;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:38px;
+    border:3px solid #c9a227;
+}
+
+.header h1{
+    font-size:24px;
+    margin:13px 0 5px;
+}
+
+.header p{
+    margin:0;
+    opacity:.9;
+    font-size:14px;
+}
+
+.card{
+    background:white;
+    margin:-15px 14px 14px;
+    position:relative;
+    border-radius:22px;
+    padding:22px 18px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.step{display:none}
+.step.active{display:block}
+
+.progress{
+    width:100%;
+    height:6px;
+    background:#eadfd2;
+    border-radius:20px;
+    margin-bottom:22px;
+    overflow:hidden;
+}
+
+.progressBar{
+    height:100%;
+    width:33%;
+    background:#c9a227;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.title{
+    font-size:21px;
+    font-weight:800;
+    margin:0 0 7px;
+}
+
+.subtitle{
+    font-size:13px;
+    color:#756057;
+    margin-bottom:18px;
+}
+
+.options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+}
+
+.option{
+    border:1px solid #dbcabc;
+    background:#fffaf4;
+    color:#4a2a20;
+    padding:11px 14px;
+    border-radius:30px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.option.selected{
+    background:#5b1a18;
+    color:white;
+    border-color:#5b1a18;
+}
+
+textarea{
+    width:100%;
+    min-height:105px;
+    resize:vertical;
+    border:1px solid #dac9ba;
+    border-radius:15px;
+    padding:14px;
+    font-size:15px;
+    outline:none;
+    margin-top:17px;
+    font-family:inherit;
+}
+
+textarea:focus{
+    border-color:#c9a227;
+}
+
+.btn{
+    width:100%;
+    border:0;
+    border-radius:14px;
+    padding:15px;
+    margin-top:16px;
+    font-size:16px;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:#5b1a18;
+    color:white;
+}
+
+.btn-gold{
+    background:#d97706;
+    color:white;
+}
+
+.reviewBox{
+    background:#fff9f1;
+    border:1px solid #ead8c4;
+    border-radius:16px;
+    padding:16px;
+    line-height:1.6;
+    font-size:15px;
+}
+
+.notice{
+    background:#f8f1e7;
+    border-radius:12px;
+    padding:11px;
+    font-size:12px;
+    color:#705e55;
+    margin-top:13px;
+}
+
+.stars{
+    text-align:center;
+    font-size:30px;
+    letter-spacing:4px;
+    margin-bottom:5px;
+}
+
+.footer{
+    text-align:center;
+    color:#806f65;
+    font-size:12px;
+    padding:12px 20px;
+}
+
+.loading{
+    text-align:center;
+    padding:20px 0;
+}
+
+.spinner{
+    width:35px;
+    height:35px;
+    border:4px solid #eadfd2;
+    border-top-color:#c9a227;
+    border-radius:50%;
+    animation:spin .8s linear infinite;
+    margin:0 auto 14px;
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+
+    <div class="logo">ॐ</div>
+
+    <h1>Prince Rudraksha Kendra</h1>
+
+    <p>Varanasi • Rudraksha • Puja Essentials</p>
+
+</header>
+
+
+<div class="card">
+
+    <div class="progress">
+        <div class="progressBar" id="progressBar"></div>
+    </div>
+
+
+    <!-- STEP 1 -->
+
+    <section class="step active" id="step1">
+
+        <h2 class="title">
+            What did you purchase?
+        </h2>
+
+        <p class="subtitle">
+            Select what matches your actual experience.
+        </p>
+
+        <div class="options" id="products">
+
+            <button class="option" data-value="Rudraksha">
+                Rudraksha
+            </button>
+
+            <button class="option" data-value="Rudraksha Mala">
+                Rudraksha Mala
+            </button>
+
+            <button class="option" data-value="Puja Samagri">
+                Puja Items
+            </button>
+
+            <button class="option" data-value="Gemstone">
+                Gemstone
+            </button>
+
+            <button class="option" data-value="Other">
+                Other
+            </button>
+
+        </div>
+
+        <button class="btn btn-primary" onclick="nextStep(2)">
+            Continue →
+        </button>
+
+    </section>
+
+
+    <!-- STEP 2 -->
+
+    <section class="step" id="step2">
+
+        <h2 class="title">
+            How was your experience?
+        </h2>
+
+        <p class="subtitle">
+            Choose the option that best describes your real experience.
+        </p>
+
+        <div class="options" id="experience">
+
+            <button class="option" data-value="excellent">
+                😊 Excellent
+            </button>
+
+            <button class="option" data-value="good">
+                🙂 Good
+            </button>
+
+            <button class="option" data-value="satisfactory">
+                👍 Satisfactory
+            </button>
+
+        </div>
+
+
+        <h3 style="margin-top:22px;margin-bottom:8px;font-size:16px;">
+            What did you like the most?
+        </h3>
+
+        <div class="options" id="best">
+
+            <button class="option" data-value="product quality">
+                Product Quality
+            </button>
+
+            <button class="option" data-value="staff behaviour">
+                Staff Behaviour
+            </button>
+
+            <button class="option" data-value="product guidance">
+                Product Guidance
+            </button>
+
+            <button class="option" data-value="variety">
+                Variety
+            </button>
+
+            <button class="option" data-value="price">
+                Price
+            </button>
+
+        </div>
+
+
+        <textarea
+            id="extra"
+            placeholder="Tell us anything specific you liked about your experience...">
+        </textarea>
+
+
+        <button class="btn btn-gold" onclick="generateReview()">
+            ✨ Generate My Review
+        </button>
+
+    </section>
+
+
+    <!-- LOADING -->
+
+    <section class="step" id="loading">
+
+        <div class="loading">
+
+            <div class="spinner"></div>
+
+            <h3>
+                Creating your review...
+            </h3>
+
+            <p class="subtitle">
+                Turning your experience into a natural review.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- STEP 3 -->
+
+    <section class="step" id="step3">
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <h2 class="title">
+            Your Review is Ready 🙏
+        </h2>
+
+        <p class="subtitle">
+            Please read it and edit anything you want before posting.
+        </p>
+
+
+        <div class="reviewBox" id="reviewText"></div>
+
+
+        <button class="btn btn-primary" onclick="copyReview()">
+            📋 Copy Review
+        </button>
+
+
+        <button class="btn btn-gold" onclick="openGoogleReview()">
+            ⭐ Post on Google
+        </button>
+
+
+        <div class="notice">
+            This draft is based only on the information you provided.
+            Please make sure the final review reflects your genuine experience.
+        </div>
+
+    </section>
+
+</div>
+
+
+<div class="footer">
+    Prince Rudraksha Kendra • Varanasi
+</div>
+
+</div>
+
+
+<script>
+
+/* GOOGLE REVIEW LINK */
+
+const GOOGLE_REVIEW_URL =
+"https://g.page/r/CTjph2LaWRvXEBE/review";
+
+
+/* USER SELECTIONS */
+
+let selectedProduct = "";
+let selectedExperience = "";
+let selectedBest = "";
+
+
+/* OPTION SETUP */
+
+function setupOptions(containerId, callback){
+
+    const container =
+        document.getElementById(containerId);
+
+    const buttons =
+        container.querySelectorAll(".option");
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", function(){
+
+            buttons.forEach(
+                b => b.classList.remove("selected")
+            );
+
+            this.classList.add("selected");
+
+            callback(this.dataset.value);
+
+        });
+
+    });
+}
+
+
+setupOptions(
+    "products",
+    value => selectedProduct = value
+);
+
+
+setupOptions(
+    "experience",
+    value => selectedExperience = value
+);
+
+
+setupOptions(
+    "best",
+    value => selectedBest = value
+);
+
+
+/* SHOW STEP */
+
+function showStep(id){
+
+    document
+        .querySelectorAll(".step")
+        .forEach(step =>
+            step.classList.remove("active")
+        );
+
+    document
+        .getElementById(id)
+        .classList.add("active");
+}
+
+
+/* NEXT */
+
+function nextStep(number){
+
+    if(!selectedProduct){
+
+        alert(
+            "Please select what you purchased."
+        );
+
+        return;
+    }
+
+    showStep("step" + number);
+
+    document
+        .getElementById("progressBar")
+        .style.width = "66%";
+}
+
+
+/* GENERATE */
+
+function generateReview(){
+
+    if(!selectedExperience){
+
+        alert(
+            "Please select your experience."
+        );
+
+        return;
+    }
+
+    showStep("loading");
+
+    document
+        .getElementById("progressBar")
+        .style.width = "100%";
+
+    setTimeout(
+        createReview,
+        900
+    );
+}
+
+
+/* REVIEW GENERATOR */
+
+function createReview(){
+
+    const extra =
+        document
+        .getElementById("extra")
+        .value
+        .trim();
+
+
+    let review = "";
+
+    review +=
+        `I visited Prince Rudraksha Kendra in Varanasi and purchased ${selectedProduct}. `;
+
+
+    if(selectedExperience === "excellent"){
+
+        review +=
+            "My overall experience was excellent. ";
+
+    }else if(selectedExperience === "good"){
+
+        review +=
+            "My overall experience was good. ";
+
+    }else{
+
+        review +=
+            "Overall, I had a satisfactory experience. ";
+
+    }
+
+
+    if(selectedBest){
+
+        review +=
+            `I especially liked the ${selectedBest}. `;
+
+    }
+
+
+    if(extra){
+
+        review +=
+            extra + " ";
+
+    }
+
+
+    review +=
+        "It was a good experience for anyone looking for Rudraksha and puja essentials in Varanasi.";
+
+
+    document
+        .getElementById("reviewText")
+        .textContent = review;
+
+
+    showStep("step3");
+}
+
+
+/* COPY */
+
+async function copyReview(){
+
+    const text =
+        document
+        .getElementById("reviewText")
+        .textContent;
+
+    try{
+
+        await navigator.clipboard.writeText(text);
+
+        alert(
+            "✅ Review copied successfully!"
+        );
+
+    }catch(error){
+
+        alert(
+            "Please select and copy the review manually."
+        );
+
+    }
+}
+
+
+/* GOOGLE REVIEW */
+
+function openGoogleReview(){
+
+    window.open(
+        GOOGLE_REVIEW_URL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```
